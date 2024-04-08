@@ -1,0 +1,22 @@
+<h1>Personajes Femeninos de Studio Ghibli</h1>
+<hr />
+<div class="row">
+  <div class="col">
+    <!-- onDelete -->
+    <!-- Añadiendo este [] llamado obtengo que se cambie el valor por defecto de mi list.component.ts () escucha eventos y [] escucha atributos
+
+      vamos a cambiar el eliminar un id normal; para hacer este evento más formal:    <ghibli-list [characterList]="ghibliService.characters"
+      (onDelete)="ghibliService.onDeleteCharacter($event)"></ghibli-list>
+    -->
+    <ghibli-list [characterList]="characters"
+                  (onDelete)="onDeleteCharacter($event)"></ghibli-list>
+  </div>
+
+  <div class="col">
+    <ghibli-add-character (onNewCharacter)="onNewCharacter($event)"></ghibli-add-character>
+
+    <!-- Este componente emitirá el personaje y habrá de insertarse en el mainPageComponent -->
+  </div>
+</div>
+
+

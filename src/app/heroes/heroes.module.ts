@@ -2,6 +2,7 @@ import { NgModule } from "@angular/core";
 import { ListComponent } from "./components/heroes/list/list.component";
 import { HeroComponent } from "./components/heroes/hero/hero.component";
 import { CommonModule } from "@angular/common";
+import { MainPageComponent } from "../ghibli/pages/main-page.component";
 
 
 @NgModule({

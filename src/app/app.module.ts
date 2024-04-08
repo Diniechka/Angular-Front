@@ -5,7 +5,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { CounterModule } from './counter/counter.module';
+import { GhibliModule } from './ghibli/ghibli.module';
 import { HeroesModule } from './heroes/heroes.module';
+
+
 // import { HeroComponent } from './heroes/hero/hero.component';
 // import { ListComponent } from './heroes/list/list.component';
 
@@ -19,7 +22,9 @@ import { HeroesModule } from './heroes/heroes.module';
     BrowserModule,
     AppRoutingModule,
     CounterModule,//se añade y encapsula esta característica aquí
+    GhibliModule,
     HeroesModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
